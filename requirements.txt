@@ -1,0 +1,3 @@
+Django==1.10.2
+django-shibboleth-remoteuser==0.8.dev0
+requests==2.11.1

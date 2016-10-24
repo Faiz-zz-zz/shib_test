@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-AUTHENTICATION_BACKENDS += (
+AUTHENTICATION_BACKENDS = (
     'shibboleth.backends.ShibbolethRemoteUserBackend',
 )
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shib_auth',
+    'shibboleth',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'shibtest.wsgi.application'
 
-
+LOGIN_URL = "https://enghub.io/Shibboleth.sso/Login"
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
